@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[application launched]]>
+    </line>
+    <line>
+      <![CDATA[login sucess]]>
+    </line>
+    <line>
+      <![CDATA[mail sent successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="pack1.fileTest" duration-ms="74205" started-at="2019-10-03T08:04:52Z" finished-at="2019-10-03T08:06:06Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="74205" started-at="2019-10-03T08:04:52Z" finished-at="2019-10-03T08:06:06Z">
+      <class name="pack1.fileTest">
+        <test-method status="PASS" signature="launchbrowser()[pri:1, instance:pack1.fileTest@3498ed]" name="launchbrowser" duration-ms="15710" started-at="2019-10-03T08:04:52Z" finished-at="2019-10-03T08:05:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[application launched]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method status="PASS" signature="login()[pri:2, instance:pack1.fileTest@3498ed]" name="login" duration-ms="30816" started-at="2019-10-03T08:05:07Z" finished-at="2019-10-03T08:05:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[login sucess]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="mail()[pri:3, instance:pack1.fileTest@3498ed]" name="mail" duration-ms="27646" started-at="2019-10-03T08:05:38Z" finished-at="2019-10-03T08:06:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[mail sent successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- mail -->
+      </class> <!-- pack1.fileTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- pack1.fileTest -->
+</testng-results>

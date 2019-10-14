@@ -1,24 +1,9 @@
 pipeline {
-  agent 
+    agent { docker { image 'maven:3.3.3' } }
     stages {
-        stage('Compile stage') {
+        stage('build') {
             steps {
-                withMaven(maven : 'maven-3.6.2')
-                sh 'mvn clean compile'
-            }
-        }
-    
-      stage('Testing stage') {
-            steps {
-                withMaven(maven : 'maven-3.6.2')
-                sh 'mvn clean test'
-            }
-        }
-    
-      stage('Deployment stage') {
-            steps {
-                withMaven(maven : 'maven-3.6.2')
-                sh 'mvn deploy'
+                sh 'mvn --version'
             }
         }
     }

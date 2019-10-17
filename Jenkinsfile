@@ -4,7 +4,7 @@ node{
     }
     stage('Compile-Package'){
         def mnvnHome = tool name: 'MAVEN_HOME', type: 'maven'
-        sh "${mvnHome}/bin/mvn package"
+        sh "${mvnHome}C:\Program Files\apache-maven-3.6.2"
             
     }
 }

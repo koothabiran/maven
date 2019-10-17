@@ -5,6 +5,13 @@ pipeline {
         jdk 'jdk-12.0.1' 
     }
     stages {
+        
+         stage ('Build') {
+            steps {
+                echo 'This is a minimal pipeline.'
+            }
+        }
+        
         stage ('Initialize') {
             steps {
                sh '''
@@ -14,10 +21,6 @@ pipeline {
             }
         }
 
-        stage ('Build') {
-            steps {
-                echo 'This is a minimal pipeline.'
-            }
-        }
+       
     }
 }
